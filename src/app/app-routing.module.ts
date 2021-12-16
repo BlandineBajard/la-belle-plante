@@ -5,9 +5,11 @@ import { PageDetailsComponent } from './pages/page-details/page-details.componen
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  { path:'', redirectTo: 'home' , pathMatch:'full' },
   { path:'home', component: PageAccueilComponent },
   { path : 'details', component: PageDetailsComponent},
-  {path : '404', component: PageNotFoundComponent}
+  {path : '**', component: PageNotFoundComponent},
+
 ];
 
 @NgModule({
