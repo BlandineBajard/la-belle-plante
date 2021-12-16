@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { PageDetailsComponent } from './pages/page-details/page-details.componen
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { FilterSideBarComponent } from './components/filter-side-bar/filter-side-bar.component';
 import { CardPlanteComponent } from './components/card-plante/card-plante.component';
+import { IconComponent } from './components/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { CardPlanteComponent } from './components/card-plante/card-plante.compon
     PageDetailsComponent,
     PageNotFoundComponent,
     FilterSideBarComponent,
-    CardPlanteComponent
+    CardPlanteComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
