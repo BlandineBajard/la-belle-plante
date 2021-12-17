@@ -13,7 +13,7 @@
         </div>
         <div class="row">
             <div class="col" *ngFor="let data of listData">
-                <app-card-plante [flower]="data"></app-card-plante>
+                <app-card-plante [flower]="data" (clickLike)="onEventLike()"></app-card-plante>
             </div>
         </div>
     </div>

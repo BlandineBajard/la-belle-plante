@@ -1,5 +1,5 @@
 <div class="plant card mb-4" style=" width: 14rem;">
-    <app-icon class="like" [iconName]="'heart'" [iconColor]="'#e35d6a'"></app-icon>
+        <app-icon class="like" [iconName]="'heart'" [iconColor]="'#e35d6a'" (click)="onClickLike()"></app-icon>
     <img src="{{ flower.product_url_picture}}" class="card-img-top" alt="{{flower.product_name}}" />
     <div class="card-body">
         <h5 class="card-title">{{flower.product_name}}</h5>

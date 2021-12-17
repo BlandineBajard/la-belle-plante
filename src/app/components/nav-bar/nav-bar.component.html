@@ -1,12 +1,12 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow ">
     <div class="container-fluid">
         <a class="navbar-brand">🪴 La Belle Plante</a>
-        <button class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" 
-            aria-expanded="false" 
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,6 +16,7 @@
                 <a routerLink="details" routerLinkActive="active" class="nav-link">Details</a>
                 <a class="nav-link">Panier</a>
                 <a class="nav-link disabled">Plus d'option bientôt</a>
+                <a class="nav-link disabled">Plantes likée(s) : {{ likeCounter }}</a>
             </div>
         </div>
     </div>

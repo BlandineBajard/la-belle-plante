@@ -40,10 +40,13 @@ export class PageAccueilComponent implements OnInit {
       console.log(ListUniqJsCategories);
 
       this.listCategoriesFilter = ListUniqCategories;
+      this.listData.length = 9;
 
     });
 
-
   }
+  onEventLike(){
+      this.productService.plantLiked$.next('');
+}
 
 }
