@@ -1,0 +1,7 @@
+<div (mouseleave)="onMouseLeave()">
+<app-icon *ngFor="let nombre of avis; let compteur=index" class="star"
+[iconName]="nombre"
+[iconColor]="'#ffca18'"
+(mouseover)="starfill(compteur)">
+</app-icon>
+</div>
